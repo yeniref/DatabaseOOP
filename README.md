@@ -1,8 +1,13 @@
 # DatabaseOOP
 
+
+## Tek Veri Çekme
+
 $getir = $DB->Getir("Select * from user Where id = :id", ['id' => '1'])[0]; //tek satır
 
 print_r($getir);
+
+## Tüm Verileri Çekme
 
 $getir = $DB->Getir("Select * from user"); //tüm tablo
 

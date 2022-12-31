@@ -1,19 +1,19 @@
 # DatabaseOOP
 
 
-## Tek Veri Çekme
+## Tek Satır Çekme
 
 $getir = $DB->Getir("Select * from user Where id = :id", ['id' => '1'])[0]; //tek satır
 
 print_r($getir);
 
-## Tüm Verileri Çekme
+## Tüm Satırları Çekme
 
 $getir = $DB->Getir("Select * from user"); //tüm tablo
 
 print_r($getir);
 
-## Veri Ekleme
+## Satır Ekleme
 
 $data = [
     'username' => 'username',
@@ -26,7 +26,7 @@ $id = $DB->Ekle("INSERT INTO `user` (`username`, `email`, `password`, `created_d
 
 print_r($id); //son id
 
-##Veri Güncelleme
+## Satır Güncelleme
 
 $data = [
     'id' => 1,
@@ -40,7 +40,7 @@ $id = $DB->Guncelle("Update `user` SET `username` = :username, `email` = :email,
 
 print_r($id); //donus 1 / 0
 
-##Veri Silme
+## Satır Silme
 
 $data = [
     'id' => 31

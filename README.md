@@ -47,4 +47,5 @@ $data = [
 ];
 
 $id =     $DB->Sil("Delete from user where id = :id", $data);
+
 print_r($id); //donus 1 / 0
